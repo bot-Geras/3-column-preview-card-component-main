@@ -6,21 +6,53 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
 
-} 
+}
+
+img {
+  display: block;
+}
 
 /* ==========
 typography ========== */
+
+h1,
+p {
+  margin: 0;
+
+
+}
+
+.icon {
+  margin: 25px 0;
+
+}
 
 h1 {
   color: hsl(0, 0%, 95%);
   font-family: 'Big Shoulders Display', cursive;
   font-weight: 700;
-  margin: 0;
-
 }
 
-p {
+.text-title,
+.text-desc {
+  margin-bottom: 25px;
+}
 
+.column {
+  padding: 20px;
+}
+
+a {
+  
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, 
+a:focus {
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.75);
+  background: none;
 }
 
 /* ==========
@@ -29,31 +61,29 @@ layout ========== */
 
 .container {
   width: 100%;
-  max-width: 710px;
-  margin: 100px auto;
-  
+  max-width: 750px;
+  margin: 90px auto;
 }
 
 .container-column {
   display: flex;
-  
- 
-  
+  flex-direction: column;
+
 }
 
-.col-1,
-.col-2,
-.col-3 {
-  padding: 0 20px;
-  
-  
+
+@media (min-width: 375px) {
+
+  .container-column {
+    flex-direction: row;
+
+  }
+
 }
 
 .col-1 {
- 
   background-color: hsl(31, 77%, 52%);
-  padding: 0 20px;
-  
+  border-radius: 5px 0 0 5px;
   
 }
 
@@ -63,14 +93,44 @@ layout ========== */
 
 .col-3 {
   background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+  
 }
 
-
-
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* button */
+
+.btn {
+
+  padding: 10px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  background: hsl(0, 0%, 95%);
+  
+}
+
+.card-btn-1 {
+  color: hsl(31, 77%, 52%);
+  
+
+}
+
+.card-btn-2 {
+  color: hsl(184, 100%, 22%);
+
+}
+
+.card-btn-3 {
+
+  color: hsl(179, 100%, 13%);
+
+}
