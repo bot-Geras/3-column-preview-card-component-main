@@ -1,3 +1,72 @@
+body {
+  font-size: .9375rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+
+} 
+
+/* ==========
+typography ========== */
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  margin: 0;
+
+}
+
+p {
+
+}
+
+/* ==========
+layout ========== */
+
+
+.container {
+  width: 100%;
+  max-width: 710px;
+  margin: 100px auto;
+  
+}
+
+.container-column {
+  display: flex;
+  
+ 
+  
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  padding: 0 20px;
+  
+  
+}
+
+.col-1 {
+ 
+  background-color: hsl(31, 77%, 52%);
+  padding: 0 20px;
+  
+  
+}
+
+.col-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.col-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
